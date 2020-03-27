@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "9f57eb89-08b2-486c-92f7-6a68b1fe7890",
+		"name": "ItiCase",
+		"description": "Série de requisições para testar diferentes retornos da API do case do Iti.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Senha válida",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44366/password/isvalid/AbTp9!foo",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44366",
+					"path": [
+						"password",
+						"isvalid",
+						"AbTp9!foo"
+					]
+				},
+				"description": "Senha válida"
+			},
+			"response": []
+		},
+		{
+			"name": "Senha inválida - Tamanho",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44366/password/isvalid/AbTp9!f",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44366",
+					"path": [
+						"password",
+						"isvalid",
+						"AbTp9!f"
+					]
+				},
+				"description": "Senha válida"
+			},
+			"response": []
+		},
+		{
+			"name": "Senha inválida - Letra maiúscula",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44366/password/isvalid/abtp9!foo",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44366",
+					"path": [
+						"password",
+						"isvalid",
+						"abtp9!foo"
+					]
+				},
+				"description": "Senha válida"
+			},
+			"response": []
+		},
+		{
+			"name": "Senha inválida - Letra minúscula",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44366/password/isvalid/ABTP9!FOO",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44366",
+					"path": [
+						"password",
+						"isvalid",
+						"ABTP9!FOO"
+					]
+				},
+				"description": "Senha válida"
+			},
+			"response": []
+		},
+		{
+			"name": "Senha inválida - Caracter Especial",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44366/password/isvalid/AbTp9afoo",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44366",
+					"path": [
+						"password",
+						"isvalid",
+						"AbTp9afoo"
+					]
+				},
+				"description": "Senha válida"
+			},
+			"response": []
+		},
+		{
+			"name": "Senha inválida - Dígito",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44366/password/isvalid/AbTp*!foo",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44366",
+					"path": [
+						"password",
+						"isvalid",
+						"AbTp*!foo"
+					]
+				},
+				"description": "Senha válida"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
