@@ -46,7 +46,7 @@
 						"AbTp9!f"
 					]
 				},
-				"description": "Senha válida"
+				"description": "Senha inválida"
 			},
 			"response": []
 		},
@@ -68,7 +68,7 @@
 						"abtp9!foo"
 					]
 				},
-				"description": "Senha válida"
+				"description": "Senha inválida"
 			},
 			"response": []
 		},
@@ -90,7 +90,7 @@
 						"ABTP9!FOO"
 					]
 				},
-				"description": "Senha válida"
+				"description": "Senha inválida"
 			},
 			"response": []
 		},
@@ -112,7 +112,7 @@
 						"AbTp9afoo"
 					]
 				},
-				"description": "Senha válida"
+				"description": "Senha inválida"
 			},
 			"response": []
 		},
@@ -134,7 +134,7 @@
 						"AbTp*!foo"
 					]
 				},
-				"description": "Senha válida"
+				"description": "Senha inválida"
 			},
 			"response": []
 		}
